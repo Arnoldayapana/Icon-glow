@@ -1,0 +1,56 @@
+:root{
+    --color-google:#F4B400;
+    --color-facebook:#4267B2;
+    --color-git:#f80000;
+    --color-leaf:#1DB954;
+    --color-youtube:#FF0000;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 50px;
+    padding: 50px;
+    font-family: Poppins;
+    background-color: rgb(45, 47, 47);
+    color: white;
+
+}
+.icons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+    
+}
+.icons img{
+    height: 200px;
+    max-width: 200px;
+}
+.google{
+    --color: var(--color-google);
+}
+.facebook{
+    --color: var(--color-facebook);
+}
+.git{
+    --color: var(--color-git);
+}
+.leaf{
+    --color: var(--color-leaf);
+}
+.youtube{
+    --color: var(--color-youtube);
+}
+
+a:hover img{
+    filter: drop-shadow(2px 2px 20px var(--color));
+}
+@media screen and (max-width: 1100px) {
+    .icons{
+        flex-direction: column;
+    }
+    
+}
